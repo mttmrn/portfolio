@@ -16,19 +16,26 @@ body {
 
 header {
     display: flex;
+    position: fixed;
+    z-index: 1;
     background: rgb(250, 224, 30);
-    width: 90%;
+    width: 100%;
     height: 10vh;
-    margin: auto;
     align-items: center;
+    margin-left: 5%;
+}
+
+nav {
+    margin-right: 10%;
 }
 
 button {
-    display: flex;
-    border: none;
+    border: 1px solid black;
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
-    outline: none;
+    background: black;
+    color: rgb(250, 224, 30);
+    cursor: pointer;
 }
 
 .nav-links{
@@ -79,7 +86,7 @@ nav {
 }
 .intro-text h1 {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 18%;
 }
 .intro-text h2 {
     text-align: center;
@@ -143,7 +150,6 @@ nav {
     top: 250px;
     color: black;
 }
-
 .fa-github-square:hover, .fa-linkedin:hover{
     transform: scale(1.1);
 }
@@ -156,36 +162,40 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.4);
 }
 
+.two {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
 .resume-button {
-    width: 500px;
-    height: 35px;
-    background: black;
+    width: 15em;
+    height: 2em;
     border-radius: 3px;
     box-shadow: 1px 4px 8px 0px black;
-    transition: all 0.2s ease-in;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.resume-button a {
+    color: rgb(250, 224, 30);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume-button:hover {
     transform: scale(1.05);
 }
 
-.download {
-    margin-top: 10vh;
-    background: rgb(250, 224, 30);
-    justify-content: center;
-    margin-left: 32.5%;
-}
-
-.download a {
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    color: rgb(250, 224, 30);
-    font-size: 24px;
-}
-
 .fa-arrow-down {
-    position: absolute;
     margin-left: 15px;
     margin-top: 5px;
 }
@@ -302,6 +312,7 @@ nav {
     justify-content: center;
     align-items: center;
     display: none;
+    z-index: 2;
 }
 
 .modal-content {
@@ -309,6 +320,24 @@ nav {
     width: 80%;
     background-color: white;
     position: relative;
+    display: flex;
+}
+
+.modal-left {
+    background-color: aquamarine;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-right {
+    background-color: yellow;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .close {
@@ -318,6 +347,10 @@ nav {
     right: 20px;
     cursor: pointer;
     font-size: 42px;
+}
+
+.close:hover {
+    color: red;
 }
 
 footer {
@@ -352,4 +385,3 @@ footer {
 }.card-front:nth-child(6){
     animation: fadeIn 2s 1.8s backwards;
 }
-
