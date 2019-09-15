@@ -276,8 +276,6 @@ nav {
     height: auto;
     max-width: 100%;
     margin-right: 10px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
     z-index: -1;
 }
 
@@ -311,8 +309,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
     z-index: 2;
+    display: none;
 }
 
 .modal-content {
@@ -385,3 +383,4 @@ footer {
 }.card-front:nth-child(6){
     animation: fadeIn 2s 1.8s backwards;
 }
+
