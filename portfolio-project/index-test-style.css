@@ -1,3 +1,7 @@
+html {
+    font-size: 10px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -38,6 +42,10 @@ button {
     cursor: pointer;
 }
 
+h3 {
+    text-align: center;
+}
+
 .nav-links{
     display: flex;
     
@@ -59,24 +67,13 @@ button {
     transition-duration: 0.3s;
     margin: 0px 10px 0px 0px;
     color: black;
-}
-
-
-.nav-link2{
-    padding: 1px 6px;
-    border-radius: 3px;
-    transition-duration: 0.3s;
-    margin: 0px 0px 0px 0px;
+    font-size: 1.4rem;
 }
 
 .nav-link:hover {
-    box-shadow: 10px 6px 8px 0 rgba(0, 0, 0, 0.24), 0 0 0 0px rgba(0, 0, 0, 0.19);
-    background-color: rgb(0, 0, 0);
-    color: rgb(250, 224, 30);
-}
-
-.nav-link2:hover {
-    box-shadow: 10px 6px 8px 0 rgba(0, 0, 0, 0.24), 0 0 0 0px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 7px 7px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 14px -5px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 14px -5px rgba(0,0,0,0.75);
     background-color: rgb(0, 0, 0);
     color: rgb(250, 224, 30);
 }
@@ -87,66 +84,26 @@ nav {
 .intro-text h1 {
     text-align: center;
     padding-top: 18%;
+    font-size: 3rem;
+
 }
 .intro-text h2 {
     text-align: center;
-    font-size: 120%;
+    font-size: 2rem;
 }
 
 .fix {
     position: fixed;
 }
 
-.search-txt {
-    background: none;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    width: 550px;
-    border-radius: 25px;
-    float: left;
-    padding: 20px;
-    outline: none;
-    caret-color: rgb(250, 224, 30);
-    color: rgb(250, 224, 30);
-}
-
-::placeholder {
-    color: rgb(250, 224, 30);
-    opacity: 0.50;
-}
-:-ms-input-placeholder{
-    color: rgb(250, 224, 30);
-    opacity: 0.50;
-}
-
-.search-box {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    height: 45px;
-    background-color: black;
-    border-radius: 25px;
-    width: 550px;
-    display: flex;
-    transform: translate(-50%, -50%);
-}
-
-.fa-search{
-    color: rgb(250, 224, 30);
-    font-size: 24px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
 .fa-github-square {
-    font-size: 44px;
+    font-size: 4.4rem;
     top: 300px;
     color: black;
 }
 
 .fa-linkedin {
-    font-size: 44px;
+    font-size: 4.4rem;
     top: 250px;
     color: black;
 }
@@ -158,8 +115,6 @@ nav {
     display: flex;
     padding-top: 200px;
     justify-content: center;
-    border: 20px black;
-    box-shadow: rgba(0, 0, 0, 0.4);
 }
 
 .two {
@@ -177,7 +132,7 @@ nav {
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 2.4rem;
     border: none;
     transition: all 0.1s ease-in-out;
 }
@@ -203,9 +158,9 @@ nav {
 .card-container {
     display: flex;
     margin-top: 12%;
-    margin-left: 16%;
-    margin-right: 16%;
-    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -252,7 +207,7 @@ nav {
     justify-content: center;
     color: rgb(250, 224, 30);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 30px;
     margin-top: 35px;
 }
@@ -261,6 +216,7 @@ nav {
     list-style: none;
     margin: 180px 50px 0px 50px;
     line-height: 40px;
+    font-size: 1.4rem;
 }
 
 .card-text li:not(:last-child){
@@ -279,6 +235,31 @@ nav {
     z-index: -1;
 }
 
+.overlay {
+    height: 43.3%;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.card-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    z-index: 2;
+    background: rgb(238,174,202);
+    background: -moz-linear-gradient(129deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: -webkit-linear-gradient(129deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(129deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+    height: 10rem;
+    width: 20rem;
+    color: white;
+}
+
 .see-more-button {
     background: none;
     color: rgb(250, 224, 30);
@@ -290,7 +271,7 @@ nav {
     margin-bottom: 10px;
     margin-top: -50px;
     transition: 0.5s;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .see-more-button:hover{
@@ -314,7 +295,7 @@ nav {
 }
 
 .modal-content {
-    height: 80%;
+    height: 70%;
     width: 90%;
     background-color: white;
     position: relative;
@@ -323,6 +304,7 @@ nav {
 
 .modal-left {
     width: 70%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -331,7 +313,9 @@ nav {
 
 .modal-right {
     width: 30%;
+    height: 100%;
     display: flex;
+    padding:1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -342,13 +326,38 @@ nav {
     margin: 5%;
 }
 
+.gif {
+    height: 100%;
+    width: 100%;
+}
+
+.modal-header {
+    font-size: 3rem;
+}
+
+.modal-subhead {
+    font-size: 1.8rem;
+    color: rgb(250, 224, 30);
+}
+
+.modal-description {
+    font-size: 1.4rem;
+}
+
+.modal-button {
+    width: 16rem;
+    height: 3.5rem;
+    border: none;
+    font-size: 1.6rem;
+}
+
 .close1, .close2, .close3, .close4, .close5, .close6 {
     transform: rotate(45deg);
     position: absolute;
     top: 0;
     right: 20px;
     cursor: pointer;
-    font-size: 42px;
+    font-size: 4.2rem;
 }
 
 .close1:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover, .close6:hover {
