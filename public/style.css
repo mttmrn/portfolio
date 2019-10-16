@@ -374,12 +374,12 @@ nav {
 }
 
 .modal-header {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .modal-subhead {
     font-size: 1.8rem;
-    color: rgb(250, 224, 30);
+    color: rgb(129, 129, 129);
 }
 
 .modal-description {
@@ -391,6 +391,13 @@ nav {
     height: 3.5rem;
     border: none;
     font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button a {
+    color: rgb(250, 224, 30);
 }
 
 .close1,
