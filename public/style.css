@@ -350,7 +350,7 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background: aquamarine;
+    align-items: center;
 }
 
 .modal-right {
@@ -370,7 +370,6 @@ nav {
 
 .gif {
     height: 100%;
-    width: 100%;
 }
 
 .modal-header {
