@@ -148,6 +148,10 @@ h3 {
 .toggle-container span {
   margin: 0px 10px;
   color: var(--color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .nav-links {
@@ -614,6 +618,8 @@ nav {
 .close5::before,
 .close6::before {
   content: "";
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background: white;
   border: 10px solid white;
   border-radius: 50%;
@@ -928,7 +934,7 @@ i {
   [data-theme="dark"] .toggle-container span {
     position: absolute;
     margin: 0;
-    top: 37px;
+    top: 33px;
   }
   [data-theme="dark"] .toggle-container span:first-of-type {
     display: none;

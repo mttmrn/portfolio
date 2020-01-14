@@ -139,6 +139,7 @@ h3 {
   span {
     margin: 0px 10px;
     color: var(--color);
+    user-select: none;
   }
 }
 
@@ -606,6 +607,7 @@ nav {
 
   &::before {
     content: "";
+    transform: rotate(45deg);
     background: white;
     border: 10px solid white;
     border-radius: 50%;
@@ -901,7 +903,7 @@ i {
       span {
         position: absolute;
         margin: 0;
-        top: 37px;
+        top: 33px;
 
         &:first-of-type {
           display: none;
