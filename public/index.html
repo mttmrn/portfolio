@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,21 +28,30 @@
 
   <body>
     <header>
-      <div class="logo-containers">
-        <a href="index.html"><img src="./img/logo.svg" alt="logo"/></a>
-        <h1 class="logo"><a href="index.html">Matt Moran</a></h1>
+      <div class="logo-container">
+        <a href="index.html">
+          <i class="fas fa-code"></i>
+          <h1 class="logo">Matt Moran</h1></a
+        >
+      </div>
+      <div class="toggle-container">
+        <span>LIGHT MODE</span>
+        <input
+          class="container_toggle"
+          type="checkbox"
+          id="switch"
+          name="mode"
+        />
+        <label for="switch"></label>
+        <span>DARK MODE</span>
       </div>
       <nav>
         <ul class="nav-links">
-          <a href="#resume">
-            <li class="nav-link">Resume</li>
-          </a>
-          <a href="#portfolio">
-            <li class="nav-link">Portfolio</li>
-          </a>
-          <a href="mailto:mattmoran50@gmail.com" target="blank">
-            <li class="nav-link">Contact</li>
-          </a>
+          <li class="nav-link"><a href="#resume">Resume</a></li>
+          <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-link">
+            <a href="mailto:mattmoran50@gmail.com" target="blank"> Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -52,8 +61,8 @@
         <h2>A self-taught programmer based in NJ.</h2>
         <p>Check out some of my projects below</p>
         <a href="#portfolio" class="arrow-container">
-          <span class="arrow first next "></span>
-          <span class="arrow second next "></span>
+          <i class="arrow first"></i>
+          <i class="arrow second"></i>
         </a>
       </div>
       <div class="card-container" id="portfolio">
@@ -99,7 +108,7 @@
               <ul class="card-text">
                 <li>React | Redux</li>
                 <li>NodeJS</li>
-                <li>Sass</li>
+                <li>SASS</li>
               </ul>
             </div>
             <div class="card-back">
@@ -408,19 +417,20 @@
 
     <div class="video">
       <iframe
-        width="650"
-        height="375"
-        src="https://www.youtube.com/embed/Kgdz0zfBEbA?modestbranding=1"
+        width="700"
+        height="394"
+        src="https://www.youtube.com/embed/1gaA9YAtu6Y?modestbranding=1"
         frameborder="0"
         allowfullscreen
       ></iframe>
     </div>
     <section class="two" id="resume">
-      <button class="resume-button">
-        <a href="resume.pdf" download="Resume.pdf"
-          >Download Resume PDF <i class="fas fa-arrow-down"></i
-        ></a>
-      </button>
+      <a
+        class="resume-button"
+        href="Matt_Moran_Resume.pdf"
+        download="Matt_Moran_Resume"
+        >Download Resume PDF <i class="fas fa-arrow-down"></i
+      ></a>
     </section>
     <footer></footer>
     <script src="./main.js"></script>

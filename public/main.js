@@ -1,3 +1,13 @@
+let checkbox = document.querySelector("input[name=mode]");
+
+checkbox.addEventListener("change", function() {
+  if (this.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+});
+
 // first card
 document.getElementById("button1").addEventListener("click", function() {
   document.querySelector(".bg-modal1").style.display = "flex";
