@@ -618,8 +618,6 @@ nav {
 .close5::before,
 .close6::before {
   content: "";
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   background: white;
   border: 10px solid white;
   border-radius: 50%;
