@@ -307,6 +307,12 @@ nav {
   text-align: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
+}
+
+#portfolio {
+  position: absolute;
+  top: -50px;
 }
 
 .card-box {
@@ -317,7 +323,6 @@ nav {
 .card {
   width: 390px;
   height: 380px;
-  border: 3px solid black;
   margin-top: 50px;
   border-radius: 2px;
   -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
@@ -489,7 +494,13 @@ nav {
 .bg-modal3,
 .bg-modal4,
 .bg-modal5,
-.bg-modal6 {
+.bg-modal6,
+.bg-modal7,
+.bg-modal8,
+.bg-modal9,
+.bg-modal10,
+.bg-modal11,
+.bg-modal12 {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -530,6 +541,11 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .modal-right {
@@ -588,6 +604,10 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 1rem;
+
+  a {
+    margin-bottom: 0;
+  }
 }
 
 .close1,
@@ -595,7 +615,13 @@ nav {
 .close3,
 .close4,
 .close5,
-.close6 {
+.close6,
+.close7,
+.close8,
+.close9,
+.close10,
+.close11,
+.close12 {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
